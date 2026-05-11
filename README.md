@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>REXX Thoothukudi 1</title>
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body{
+      background:#f2fbff;
+      color:#222;
+    }
+
+    /* HEADER */
+
+    header{
+      background:linear-gradient(to right,#00bfff,#87ceeb);
+      color:white;
+      text-align:center;
+      padding:30px;
+      box-shadow:0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    header h1{
+      font-size:55px;
+      letter-spacing:3px;
+    }
+
+    header p{
+      margin-top:10px;
+      font-size:22px;
+    }
+
+    /* NAVIGATION */
+
+    nav{
+      background:#0099cc;
+      padding:15px;
+      text-align:center;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin:0 20px;
+      font-size:18px;
+      transition:0.3s;
+      font-weight:bold;
+    }
+
+    nav a:hover{
+      color:yellow;
+    }
+
+    /* HERO SECTION */
+
+    .hero{
+      height:90vh;
+      background:url('shop.jpg') center/cover no-repeat;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      position:relative;
+    }
+
+    .hero::before{
+      content:'';
+      position:absolute;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+      background:rgba(0,0,0,0.5);
+    }
+
+    .hero-content{
+      position:relative;
+      color:white;
+      z-index:2;
+    }
+
+    .hero-content h2{
+      font-size:60px;
+      margin-bottom:20px;
+    }
+
+    .hero-content p{
+      font-size:25px;
+      margin-bottom:30px;
+    }
+
+    .btn{
+      padding:15px 35px;
+      background:#00bfff;
+      color:white;
+      text-decoration:none;
+      font-size:20px;
+      border-radius:10px;
+      transition:0.3s;
+      font-weight:bold;
+    }
+
+    .btn:hover{
+      background:white;
+      color:#0099cc;
+    }
+
+    /* ABOUT SECTION */
+
+    .section{
+      padding:70px 10%;
+      text-align:center;
+    }
+
+    .section h2{
+      font-size:45px;
+      color:#0099cc;
+      margin-bottom:20px;
+    }
+
+    .section p{
+      font-size:20px;
+      line-height:1.8;
+    }
+
+    /* CARDS */
+
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:30px;
+      margin-top:40px;
+    }
+
+    .card{
+      background:white;
+      padding:35px;
+      border-radius:20px;
+      box-shadow:0 8px 20px rgba(0,0,0,0.15);
+      transition:0.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-10px);
+    }
+
+    .card h3{
+      color:#00a2d4;
+      margin-bottom:15px;
+      font-size:30px;
+    }
+
+    .card p{
+      font-size:18px;
+    }
+
+    /* GALLERY */
+
+    .gallery{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+      gap:25px;
+      margin-top:40px;
+    }
+
+    .gallery img{
+      width:100%;
+      border-radius:20px;
+      box-shadow:0 5px 15px rgba(0,0,0,0.2);
+      transition:0.3s;
+    }
+
+    .gallery img:hover{
+      transform:scale(1.03);
+    }
+
+    /* OWNER SECTION */
+
+    .owner{
+      background:#dff6ff;
+      border-radius:20px;
+      padding:40px;
+      margin-top:40px;
+    }
+
+    .owner h3{
+      font-size:38px;
+      color:#0099cc;
+      margin-bottom:15px;
+    }
+
+    .owner p{
+      font-size:20px;
+    }
+
+    /* INSTAGRAM BUTTON */
+
+    .social-btn{
+      display:inline-block;
+      margin-top:25px;
+      padding:15px 30px;
+      background:#0099cc;
+      color:white;
+      text-decoration:none;
+      border-radius:10px;
+      font-size:18px;
+      transition:0.3s;
+    }
+
+    .social-btn:hover{
+      background:#00bfff;
+    }
+
+    /* FOOTER */
+
+    footer{
+      background:#0099cc;
+      color:white;
+      text-align:center;
+      padding:25px;
+      margin-top:50px;
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <!-- HEADER -->
+
+  <header>
+    <h1>REXX</h1>
+    <p>Thoothukudi - 1 Premium Men's Wear Shop</p>
+  </header>
+
+  <!-- NAVBAR -->
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Collections</a>
+    <a href="#">Gallery</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <!-- HERO -->
+
+  <section class="hero">
+
+    <div class="hero-content">
+
+      <h2>Premium Men's Fashion</h2>
+
+      <p>
+        Best Quality Dresses Directly From Bangalore
+      </p>
+
+      <a href="#" class="btn">Explore Collection</a>
+
+    </div>
+
+  </section>
+
+  <!-- ABOUT -->
+
+  <section class="section">
+
+    <h2>About REXX</h2>
+
+    <p>
+      REXX Thoothukudi 1 is one of the best premium men's wear shops
+      offering stylish fashion collections, modern designs,
+      and top-quality dresses directly sourced from Bangalore.
+    </p>
+
+    <div class="cards">
+
+      <div class="card">
+        <h3>Premium Quality</h3>
+
+        <p>
+          High-quality branded men's fashion collections.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Latest Trends</h3>
+
+        <p>
+          Modern and stylish collections for every generation.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Bangalore Collections</h3>
+
+        <p>
+          Special premium dresses imported from Bangalore.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- GALLERY -->
+
+  <section class="section">
+
+    <h2>Shop Gallery</h2>
+
+    <div class="gallery">
+
+      <img src="shop.jpg" alt="Shop Image">
+
+      <img src="shop.jpg" alt="Shop Image">
+
+      <img src="shop.jpg" alt="Shop Image">
+
+    </div>
+
+  </section>
+
+  <!-- OWNER -->
+
+  <section class="section">
+
+    <div class="owner">
+
+      <h3>Owner : Mahesh</h3>
+
+      <p>
+        Welcome to REXX Thoothukudi 1.
+        We provide premium fashion collections with the best quality
+        and customer satisfaction.
+      </p>
+
+      <a class="social-btn"
+         href="https://www.threads.com/@_draco_rex_?xmt=AQG0CIbV7nxOrSR9zFRWh5er66ilHLq_9zIWlCYK50fWXmI"
+         target="_blank">
+
+         Visit Our Threads Page
+
+      </a>
+
+    </div>
+
+  </section>
+
+  <!-- CONTACT -->
+
+  <section class="section">
+
+    <h2>Contact Us</h2>
+
+    <p>
+      REXX Men's Wear <br>
+      Thoothukudi - 1 <br><br>
+
+      Owner : Mahesh <br>
+      Phone : +91 XXXXX XXXXX
+    </p>
+
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <p>
+      © 2026 REXX Thoothukudi 1 | Premium Men's Wear
+    </p>
+
+  </footer>
+
+</body>
+</html>
